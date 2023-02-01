@@ -21,7 +21,8 @@ services:
     networks:
       - nodenet
     volumes:
-      - ./node:/usr/src/app
+      - ./node:/app
+      - /app/node_modules
 
   nginx:
     container_name: nginx
